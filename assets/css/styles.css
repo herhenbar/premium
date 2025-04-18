@@ -1839,3 +1839,28 @@ body .elementor-element {
   padding-left: 15px;
   padding-right: 15px;
 }
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.guarantee-section {
+  background: rgba(20, 20, 20, 0.8) !important; /* Dark background */
+  border: 1px solid rgba(212, 175, 55, 0.3); /* Gold border */
+  color: #fff;
+}
+
+.guarantee-icon {
+  color: #d4af37 !important; /* Gold icon */
+}
