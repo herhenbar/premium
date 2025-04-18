@@ -1,14 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-   <head>
-    <!-- Add this RIGHT AFTER the viewport meta tag -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"> <!-- THIS LINE -->
-    <title>Seu Corpo Merece Saber | Ebooks Premium de Saúde e Bem-estar</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- METADADOS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seu Corpo Merece Saber | Ebooks Premium de Saúde e Bem-estar</title>
+  
+  <link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32x32.png" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  
+  <style>
+    /* Fixed WhatsApp button that doesn't blink */
+    .whatsapp-float {
+        position: fixed;
+        width: 55px;
+        height: 55px;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+        z-index: 9999; /* Higher z-index to ensure it's always on top */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s;
+    }
+
+    .whatsapp-float i {
+        font-size: 30px;
+        position: relative; /* Stabilize icon position */
+    }
+
+    .whatsapp-float:hover {
+        background-color: #20ba5a;
+        transform: scale(1.05);
+    }
+    
+    /* Reset all section spacing to be consistent */
+    section {
+      margin: 0 !important;
+      padding: 40px 0 !important;
+    }
+
+    /* Consistent spacing between sections */
+    section + section {
+      padding-top: 40px !important;
+      margin-top: 0 !important;
+    }
+    
+    /* Fixed guarantee section styling */
+    .guarantee-section {
+        padding: 40px 0 !important;
+        background: rgba(20, 20, 20, 0.8);
+        border: 1px solid rgba(212, 175, 55, 0.3);
+        border-radius: 8px;
+        max-width: 800px;
+        margin: 40px auto !important;
+    }
+
+    .guarantee-section .section-title h2 {
+        color: #d4af37;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .guarantee-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .guarantee-icon {
+        font-size: 2rem;
+        color: #d4af37;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Fix combo callout text size */
+    .combo-callout {
+      font-size: 1.3rem;
+      line-height: 1.5;
+      margin: 25px auto;
+    }
+    
+    .combo-callout small {
+      font-size: 1rem;
+    }
+    
+    /* Fix for FAQ section */
+    .faq-item {
+        margin-bottom: 15px;
+        border: 1px solid rgba(212, 175, 55, 0.3);
+        background: rgba(30, 30, 30, 0.8);
+        transition: all 0.3s ease;
+    }
+
+    .faq-question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        cursor: pointer;
+    }
+
+    .faq-icon {
+        font-size: 1.5rem;
+        color: var(--gold);
+        transition: transform 0.3s ease;
+    }
+
+    .faq-answer {
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+
+    .faq-item.active .faq-answer {
+        padding: 0 20px 20px;
+        max-height: 1000px;
+    }
+    
+    .faq-item.active .faq-icon {
+        transform: rotate(45deg);
+    }
+    
+    /* Remove gold lines below questions */
+    .faq-item:after {
+      display: none;
+    }
+  </style>
 </head>
 <body>
     <!-- Header & Navigation -->
@@ -43,182 +176,154 @@
         </div>
     </section>
 
-<!-- Add this after the hero section and before the "About Section" -->
-<section class="health-transformation">
-  <div class="container">
-    <h2 class="gold-accent">Transforme Sua Saúde em Apenas 30 Dias</h2>
-    
-    <div class="transformation-content">
-      <p class="lead-text">O <strong>Guia Detox Completo</strong> não é apenas mais um ebook — é seu caminho para uma vida mais saudável, energizada e equilibrada.</p>
-      
-      <div class="benefits-highlight">
-        <div class="benefit-item">
-          <span class="benefit-icon">🌱</span>
-          <p>Receitas exclusivas desenvolvidas por especialistas em nutrição</p>
-        </div>
-        <div class="benefit-item">
-          <span class="benefit-icon">⚡</span>
-          <p>Aumento notável de energia já na primeira semana</p>
-        </div>
-        <div class="benefit-item">
-          <span class="benefit-icon">✨</span>
-          <p>Melhora na qualidade do sono e clareza mental</p>
-        </div>
-      </div>
-      
-      <div class="cta-highlight">
-        <p class="limited-offer">Promoção por tempo limitado: <span class="old-price">De R$ 64,90</span> por <span class="special-price">R$ 39,90</span></p>
-        <a href="https://pay.hotmart.com/T98822602G?checkoutMode=10" class="btn btn-large" target="_blank">Quero Transformar Minha Saúde Agora</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <!-- About Section -->
-    <section id="sobre" class="container">
-        <div class="section-title">
-            <h2>Estilo Premium + Estética</h2>
-            <p>Um Guia de Saúde Que Dá Gosto de Ler</p>
-        </div>
-        <div class="benefits-grid">
-            <div class="benefit-card">
-                <div class="benefit-icon">✨</div>
-                <h3>Conhecimento Especializado</h3>
-                <p>Nossos ebooks são baseados em pesquisas e resultados reais.</p>
-            </div>
-            <div class="benefit-card">
-                <div class="benefit-icon">🔬</div>
-                <h3>Baseado em Ciência</h3>
-                <p>Todas as nossas recomendações são apoiadas por pesquisas científicas.</p>
-            </div>
-            <div class="benefit-card">
-                <div class="benefit-icon">🌱</div>
-                <h3>Abordagem Holística</h3>
-                <p>Acreditamos no equilíbrio entre corpo e mente para uma verdadeira transformação da saúde.</p>
-            </div>
-        </div>
-    </section>
-
     <!-- Products Section -->
     <section id="produtos" class="container">
         <div class="section-title">
-            <h2>Nossos Ebooks Premium</h2>
-            <p>Conheça nossa seleção cuidadosamente elaborada de conteúdos para ajudar você a alcançar seus objetivos de saúde e bem-estar.</p>
+            <h2>Escolha seu Guia Premium Preferido</h2>
         </div>
+<div class="products" style="display: flex; justify-content: center; gap: 25px; margin: 0 auto; width: 100%; max-width: 1200px;">
         <div class="products">
-            <div class="product-card">
-    <div class="product-img">
-        <img src="assets/images/detox.png" alt="Guia Detox Completo">
-    </div>
-    <div class="product-info">
-        <h3>Guia Detox Completo</h3>
-        <p>Um ebook premium de 30 páginas com receitas exclusivas: 5 receitas low carb, 5 sucos detox, 5 caldos e sopas, mais 3 bônus de chás premium.</p>
-        <div class="price-container">
-            <span class="old-price">R$ 64,90</span>
-            <span class="price">R$ 39,90</span>
-        </div>
-        <button 
-            class="btn"
-            onclick="window.open('https://pay.hotmart.com/T98822602G?checkoutMode=10', '_blank')"
-            style="
-                display: inline-block;
-                padding: 14px 32px;
-                background: #d4af37;
-                color: #222;
-                border: none;
-                border-radius: 0;
-                font-weight: bold;
-                font-size: 16px;
-                cursor: pointer;
-                text-align: center;
-                text-decoration: none;
-                transition: all 0.3s;
-            "
-        >
-            Comprar Agora
-        </button>
-    </div>
-</div>
+            <!-- FIRST PRODUCT - NEW -->
             <div class="product-card">
                 <div class="product-img">
-                    <img src="assets/images/ozempic.png" alt="Guia Ozempic Completo">
+                    <img src="assets/images/ds.png" alt="Deficiências Silenciosas">
                 </div>
                 <div class="product-info">
-                    <h3>Guia Ozempic Completo</h3>
-                    <p>73 páginas de informações valiosas sobre o medicamento, comparações, preços, onde adquirir, como evitar golpes e estudos científicos.</p>
+                    <h3>Deficiências Silenciosas</h3>
+                    <p>68 páginas sobre os sinais da falta de VITAMINAS e MINERAIS, seus riscos e onde encontrá-las — de forma natural ou suplementar.</p>
                     <div class="price-container">
-                        <span class="old-price">R$ 73,90</span>
-                        <span class="price">R$ 19,90</span>
+                        <span class="old-price">R$64,90</span>
+                        <span class="price">R$52,90</span>
                     </div>
                     <button 
-  class="btn"
-  onclick="window.open('https://pay.hotmart.com/T98822602G?checkoutMode=10&off=2', '_blank')"
-  style="
-    display: inline-block;
-    padding: 14px 32px;
-    background: #d4af37;
-    color: #222;
-    border: none;
-    border-radius: 0;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    transition: all 0.3s;
-  "
->
-  Comprar Agora
-</button>
-</div>
+                        class="btn"
+                        onclick="window.open('https://pay.hotmart.com/C99228714F?checkoutMode=10', '_blank')"
+                    >
+                        Comprar Agora
+                    </button>
+                </div>
             </div>
+            
+            <!-- SECOND PRODUCT - OZEMPIC -->
             <div class="product-card">
                 <div class="product-img">
-                    <img src="assets/images/vinhos.png" alt="A Casa dos Vinhos">
+                    <img src="assets/images/ozempic.png" alt="Guia Ozempic Bombástico">
                 </div>
                 <div class="product-info">
-                    <h3>A Casa dos Vinhos <small>(1ª Edição)</small></h3>
-                    <p>37 páginas sobre 10 rótulos selecionados e harmonizações exclusivas com pratos e petiscos. 5 destes rótulos estão entre os mais vendidos no Brasil em 2024.</p>
+                    <h3>Guia Ozempic Bombástico</h3>
+                    <p>77 páginas de informações valiosas sobre o medicamento, comparações, preços, onde adquirir, como evitar golpes e estudos científicos.</p>
                     <div class="price-container">
-                        <span class="old-price">R$ 54,90</span>
-                        <span class="price">R$ 28,90</span>
+                        <span class="old-price">R$73,90</span>
+                        <span class="price">R$47,00</span>
                     </div>
                     <button 
-  class="btn"
-  onclick="window.open('https://pay.hotmart.com/V99119015W', '_blank')"
-  style="
-    display: inline-block;
-    padding: 14px 32px;
-    background: #d4af37;
-    color: #222;
-    border: none;
-    border-radius: 0;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    transition: all 0.3s;
-  "
->
-  Comprar Agora
-</button>
+                        class="btn"
+                        onclick="window.open('https://pay.hotmart.com/K98684404Q?checkoutMode=10', '_blank')"
+                    >
+                        Comprar Agora
+                    </button>
+                </div>
+            </div>
+            
+            <!-- THIRD PRODUCT - DETOX -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="assets/images/detox.png" alt="Guia Detox Turbo">
+                </div>
+                <div class="product-info">
+                    <h3>Guia Detox Turbo (1ºEdição)</h3>
+                    <p>Um ebook premium de 30 páginas com receitas exclusivas: 5 receitas low carb, 5 sucos detox, 5 caldos e sopas, mais 3 receitas bônus de chás premium.</p>
+                    <div class="price-container">
+                        <span class="old-price">R$64,90</span>
+                        <span class="price">R$42,90</span>
+                    </div>
+                    <button 
+                        class="btn"
+                        onclick="window.open('https://pay.hotmart.com/T98822602G?checkoutMode=10', '_blank')"
+                    >
+                        Comprar Agora
+                    </button>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- CTA PARA COMBOS -->
+    <div class="combo-callout" style="text-align: center; max-width: 600px; margin: 15px auto;">
+      <span style="color: #d4af37;">⚠️ OFERTA COMBO:</span> Leve <strong>3 guias premium</strong> + <strong>2 bônus exclusivos</strong> por apenas R$119,90<br>
+      <small>(Valor individual: R$221,80 - Você economiza 46%)</small>
+    </div>
+    
+    <div class="combo-cta-container" style="text-align: center; margin: 15px auto 40px; max-width: 500px;">
+      <a href="#combo-premium" class="gold-rectangular-cta" style="font-size: 1.3rem;">
+        <span class="diamond-icon">💎</span> OFERTA EXCLUSIVA...
+        QUERO MEU COMBO COM 46% OFF 
+        <span class="arrow-icon">→</span>
+      </a>
+    </div>
 
-<!-- Add this immediately after the </div> that closes the "products" section -->
-<section class="bundle-offer">
-    <div class="container">
-        <h3>Oferta Especial: Coleção Completa</h3>
-        <p>Adquira os 3 ebooks da Herhenbar Premium e receba um bônus exclusivo de nossa coleção. O material bônus será enviado para seu e-mail em 7 dias após a compra.</p>
-        <a href="https://pay.hotmart.com/T98822602G?checkoutMode=10" class="btn btn-gold" target="_blank">COMPRAR AGORA</a>
-    </div> <!-- Added closing div tag -->
-</section>
+    <!-- COMBOS -->
+    <section id="combos" class="combo-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Escolha Seu Combo Ideal</h2>
+          <p>Economize até R$100+ com nossas ofertas exclusivas</p>
+        </div>
 
-    <!-- Benefits Section -->
-    <section id="beneficios" class="benefits">
+        <div class="combo-grid">
+          <!-- COMBO 1 -->
+          <div class="combo-card combo-essential">
+            <div class="combo-badge">Mais Popular</div>
+            <h3>Combo Essencial — Corpo em Equilíbrio</h3>
+            <div class="combo-includes">
+              <h4><i class="fas fa-gift gold-icon"></i> Inclui:</h4>
+              <ul>
+                <li><strong>Detox Turbo</strong> <span class="page-count">(30 páginas)</span> <span class="original-price">R$42,90</span></li>
+                <li><strong>Ozempic Bombástico</strong> <span class="page-count">(77 páginas)</span> <span class="original-price">R$47,00</span></li>
+                <li class="bonus-item"><i class="fas fa-gift gold-icon"></i> <span class="bonus-text">Bônus:</span> <strong>As Top lojas femininas do <i class="fab fa-instagram"></i></strong> <span class="original-price">(R$37,00)</span></li>
+              </ul>
+            </div>
+            <div class="price-box">
+              <div class="price-comparison">
+                <span class="total-original">Valor total: R$126,90</span>
+                <span class="economy">Você economiza R$49,90</span>
+              </div>
+              <div class="current-price">R$77,00</div>
+            </div>
+            <a href="https://pay.hotmart.com/E99244179R?checkoutMode=10" class="btn btn-combo" target="_blank">Quero minha transformação com equilíbrio</a>
+          </div>
+
+          <!-- COMBO 2 -->
+          <div class="combo-card combo-premium" id="combo-premium">
+            <h3>Combo Premium — Corpo e Consciência</h3>
+            <div class="combo-includes">
+              <h4><i class="fas fa-box-open gold-icon"></i> Inclui:</h4>
+              <ul>
+                <li><strong>Detox Turbo</strong> <span class="page-count">(30 páginas)</span> <span class="original-price">R$42,90</span></li>
+                <li><strong>Ozempic Bombástico</strong> <span class="page-count">(77 páginas)</span> <span class="original-price">R$47,00</span></li>
+                <li><strong>Deficiências Silenciosas</strong> <span class="page-count">(68 páginas)</span> <span class="original-price">R$52,90</span></li>
+                <li class="bonus-item"><i class="fas fa-gift gold-icon"></i> <span class="bonus-text">Bônus:</span> <strong>1. As Top lojas femininas do <i class="fab fa-instagram"></i></strong> <span class="original-price">(R$37,00)</span></li>
+                <li class="bonus-item"><i class="fas fa-gift gold-icon"></i> <span class="bonus-text">Bônus:</span> <strong>2. Guia Surpresa (Prazer sem Culpa)</strong> <span class="original-price">(R$42,00)</span></li>
+              </ul>
+            </div>
+            <div class="price-box">
+              <div class="price-comparison">
+                <span class="total-original">Valor total: R$221,80</span>
+                <span class="economy">Você economiza R$101,90</span>
+              </div>
+              <div class="current-price">R$119,90</div>
+            </div>
+            <a href="https://pay.hotmart.com/V99246068T?checkoutMode=10" class="btn btn-combo" target="_blank">Quero o combo completo</a>
+          </div>
+        </div>
+        <div class="combo-guarantee">
+          <p style="font-size: 1.2rem;">⚠️ <strong>Oferta por tempo limitado</strong> • Bônus entregues via e-mail em até 7 dias após confirmação de pagamento</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section id="beneficios" class="benefits premium-style">
         <div class="container">
             <div class="section-title">
                 <h2>Benefícios Exclusivos</h2>
@@ -252,14 +357,14 @@
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">🎨</div>
-                    <h3>Design Premium</h3>
-                    <p>Layout elegante com texturas diferenciadas que elevam a experiência de leitura.</p>
+                    <h3>Design Imersivo</h3>
+                    <p>Apps de I.A não produzem nossas páginas — uma a uma, são artesanalmente formatadas e estudadas.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
+    <!-- DEPOIMENTOS -->
     <section id="depoimentos" class="testimonials">
         <div class="container">
             <div class="section-title">
@@ -292,14 +397,14 @@
                     </div>
                 </div>
                 <div class="testimonial-card">
-                    <p class="testimonial-text">A Casa dos Vinhos é um guia extraordinário! As harmonizações sugeridas são impecáveis e me ajudaram a apreciar ainda mais os bons vinhos. O design do ebook é simplesmente espetacular.</p>
+                    <p class="testimonial-text">"Deficiências Silenciosas é um guia essencial! As orientações sobre carências nutricionais são claras e valiosas, me ajudaram a identificar o que faltava na minha alimentação. O visual do ebook é impecável."</p>
                     <div class="testimonial-author">
                         <div class="author-img">
                             <img src="assets/images/user3.png" alt="Carla L.">
                         </div>
                         <div class="author-info">
                             <h4>Carla L.</h4>
-                            <p>Entusiasta de vinhos</p>
+                            <p>Pedagoga</p>
                         </div>
                     </div>
                 </div>
@@ -307,235 +412,204 @@
         </div>
     </section>
 
-    <!-- ========== [INÍCIO DA SEÇÃO GARANTIA] ========== -->
-    <!-- Replace the current guarantee section -->
-<section class="guarantee-section">
-    <div class="container">
-        <div class="guarantee-content">
-            <div class="guarantee-text">
-                <h3 class="guarantee-title">Garantia de Satisfação de 7 Dias</h3>
-                <p>Se não ficar completamente satisfeito com nossos ebooks, devolvemos seu dinheiro integralmente.<br>
-                Sem perguntas, sem burocracia.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-    <!-- ========== [FIM DA SEÇÃO GARANTIA] ========== -->
-
-    <!-- ========== [INÍCIO FAQ] ========== -->
-<section class="faq">
-    <div class="container">
-        <div class="section-title">
-            <h2>Perguntas Frequentes</h2>
-            <p>Tudo que você precisa saber antes de adquirir nossos produtos premium</p>
-        </div>
-        
-        <div class="faq-container">
-            <!-- PERGUNTA 1 -->
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>Como funciona o eBook?</h3>
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Nossos e-books são guias completos com explicações simples e dicas práticas para quem quer evoluir sem complicações. Após a compra, você receberá acesso imediato ao material diretamente no seu e-mail.</p>
-                </div>
-            </div>
-            
-            <!-- PERGUNTA 2 -->
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>Tenho uma garantia?</h3>
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Sim! Oferecemos uma garantia de 7 dias. Se você não ficar completamente satisfeito com o conteúdo, pode solicitar o reembolso total, sem burocracia.</p>
-                </div>
-            </div>
-            
-            <!-- PERGUNTA 3 -->
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>Preciso de conhecimento prévio?</h3>
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Não! O eBook foi criado para iniciantes e também para quem já tem alguma experiência. As explicações são fáceis de seguir e aplicáveis no dia a dia.</p>
-                </div>
-            </div>
-            
-            <!-- PERGUNTA 4 -->
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>Em quanto tempo recebo o eBook?</h3>
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Após a confirmação do pagamento, o eBook será enviado diretamente para o seu e-mail em poucos minutos. Tudo 100% online e prático.</p>
-                </div>
-            </div>
-            
-            <!-- PERGUNTA 5 -->
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>Vou ter suporte?</h3>
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Claro! Nossa equipe está disponível para tirar qualquer dúvida sobre o eBook. Você pode entrar em contato conosco pelo e-mail de suporte ou WhatsApp disponíveis na página.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<style>
-.faq {
-    padding: 60px 0;
-    background: rgba(20, 20, 20, 0.8);
-    margin-bottom: 0;
-}
-
-.faq-container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.faq-item {
-    margin-bottom: 15px;
-    border: 1px solid rgba(212, 175, 55, 0.3);
-    background: rgba(30, 30, 30, 0.8);
-    transition: all 0.3s ease;
-}
-
-.faq-item:hover {
-    border-color: var(--gold);
-}
-
-.faq-question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    cursor: pointer;
-}
-
-.faq-question h3 {
-    margin: 0;
-    font-size: 1.2rem;
-    color: var(--gold);
-}
-
-.faq-icon {
-    font-size: 1.5rem;
-    color: var(--gold);
-    transition: transform 0.3s ease;
-}
-
-.faq-answer {
-    padding: 0 20px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease, padding 0.3s ease;
-}
-
-.faq-item.active .faq-icon {
-    transform: rotate(45deg);
-}
-
-.faq-item.active .faq-answer {
-    padding: 0 20px 20px;
-    max-height: 1000px;
-}
-</style>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const faqItems = document.querySelectorAll('.faq-item');
-    
-    faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        
-        question.addEventListener('click', () => {
-            const isActive = item.classList.contains('active');
-            
-            // Close all FAQ items
-            faqItems.forEach(faqItem => {
-                faqItem.classList.remove('active');
-            });
-            
-            // If the clicked item wasn't active, make it active
-            if (!isActive) {
-                item.classList.add('active');
-            }
-        });
-    });
-});
-</script>
-<!-- ========== [FIM FAQ] ========== -->
-
-<!-- Add this before the final CTA section -->
-
-    <!-- Call to Action -->
-    <section class="cta">
+    <section class="premium-style">
         <div class="container">
-            <h2>Pronto para Elevar Seu Conhecimento?</h2>
-            <p>Dê o primeiro passo em direção a uma vida mais informada e saudável com nossos guias premium.</p>
-            <a href="https://pay.hotmart.com/T98822602G?checkoutMode=10" class="btn" target="_blank">Comece Hoje</a>
+            <div class="section-title">
+                <h2>Estilo Premium + Estética</h2>
+                <p>Um Guia de Saúde Que Dá Gosto de Ler</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Conhecimento Aplicado</h3>
+                    <p>Estratégias eficazes (sem complicação acadêmica).</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔬</div>
+                    <h3>Baseado em evidências</h3>
+                    <p>Tudo o que a indústria farmacêutica não te conta.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌱</div>
+                    <h3>Abordagem Holística</h3>
+                    <p>Acreditamos no equilíbrio entre corpo e mente para uma verdadeira transformação da saúde.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
-
-        <!-- ========== [INÍCIO DO RODAPÉ] ========== -->
-    <footer id="contato" style="background: #1a3a2c; color: #fff; padding: 40px 0; text-align: center;">
-        <div class="container">
-            <h3 style="margin-bottom: 15px;">Herhenbar Premium</h3>
-            <p style="max-width: 500px; margin: 0 auto 20px;">Transformando vidas através de conteúdo exclusivo em saúde e bem-estar.</p>
-            
-            <div style="margin: 25px 0;">
-                <p style="margin: 8px 0;"><i class="fas fa-envelope"></i> Email: contato@armonisse.com.br</p>
-                <p style="margin: 8px 0;"><i class="fas fa-phone"></i> WhatsApp: (11) 95222-3060</p>
-            </div>
-            
-            <p style="font-size: 14px; margin-top: 20px;">© 2025 Herhenbar Premium. Todos os direitos reservados.</p>
+    <!-- GARANTIA - Fixed section -->
+    <section class="guarantee-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Garantia de Satisfação</h2>
         </div>
+        <div class="guarantee-content">
+          <div class="guarantee-icon">✓</div>
+          <p>Se não ficar completamente satisfeito com nossos ebooks, devolvemos seu dinheiro integralmente em até 7 dias.<br>
+          Sem perguntas, sem burocracia.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRANSFORME SUA SAÚDE -->
+    <section class="health-transformation">
+      <div class="container">
+        <h2 class="gold-accent">Transforme Sua Saúde em Apenas 30 Dias</h2>
+        
+        <div class="transformation-content">
+          <p class="lead-text">O <strong>Guia Detox Turbo</strong> não é apenas mais um ebook — é o seu caminho para uma vida mais saudável, energizada e equilibrada.</p>
+          
+          <div class="benefits-highlight">
+            <div class="benefit-item">
+              <span class="benefit-icon">🌱</span>
+              <p>Receitas exclusivas desenvolvidas com foco em nutrição</p>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon">⚡</span>
+              <p>Aumento notável de energia já na primeira semana</p>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon">✨</span>
+              <p>Melhora na qualidade do sono e clareza mental</p>
+            </div>
+          </div>
+          
+          <div class="cta-highlight">
+            <p class="limited-offer">Promoção por tempo limitado: <span class="old-price">De R$ 64,90</span> por <span class="special-price">R$ 39,90</span></p>
+            <a href="https://pay.hotmart.com/T98822602G?checkoutMode=10" class="btn btn-large" target="_blank">Quero Transformar Minha Saúde Agora</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <div class="container">
+        <div class="section-title">
+          <h2>Perguntas Frequentes</h2>
+          <p>Tudo que você precisa saber antes de adquirir nossos produtos premium</p>
+        </div>
+        
+        <div class="faq-container">
+          <!-- PERGUNTA 1 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Como funciona o eBook?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Nossos e-books são guias completos com explicações simples e dicas práticas para quem quer evoluir sem complicações. Após a compra, você receberá acesso imediato ao material diretamente no seu e-mail.</p>
+            </div>
+          </div>
+          
+          <!-- PERGUNTA 2 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Tenho uma garantia?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Sim! Oferecemos uma garantia de 7 dias. Se você não ficar completamente satisfeito com o conteúdo, pode solicitar o reembolso total, sem burocracia.</p>
+            </div>
+          </div>
+          
+          <!-- PERGUNTA 3 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Preciso de conhecimento prévio?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Não! O eBook foi criado para iniciantes e também para quem já tem alguma experiência. As explicações são fáceis de seguir e aplicáveis no dia a dia.</p>
+            </div>
+          </div>
+          
+          <!-- PERGUNTA 4 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Em quanto tempo recebo o eBook?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Após a confirmação do pagamento, o eBook será enviado diretamente para o seu e-mail em poucos minutos. Tudo 100% online e prático.</p>
+            </div>
+          </div>
+          
+          <!-- PERGUNTA 5 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Vou ter suporte?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Claro! Nossa equipe está disponível para tirar qualquer dúvida sobre o eBook. Você pode entrar em contato conosco pelo e-mail de suporte ou WhatsApp disponíveis na página.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato">
+      <div class="container">
+        <h3 style="border-bottom: none;">Herhenbar Premium</h3>
+        <p>Transformando vidas através de conteúdo exclusivo em saúde e bem-estar.</p>
+        
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> Email: contato@armonisse.com.br</p>
+          <p><i class="fas fa-phone"></i> WhatsApp: <span style="color: white;">(11) 95222-3060</span></p>
+        </div>
+        
+        <p class="copyright">© 2025 Herhenbar Premium. Todos os direitos reservados.</p>
+      </div>
     </footer>
-    <!-- ========== [FIM DO RODAPÉ] ========== -->
-<!-- Add this right before the closing </body> tag -->
-<a href="https://wa.me/5511952223060" class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-</a>
 
-<style>
-.whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s;
-}
+    <!-- WhatsApp floating button -->
+    <a href="https://wa.me/5511952223060" class="whatsapp-float" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
 
-.whatsapp-float:hover {
-    background-color: #128C7E;
-    transform: scale(1.1);
-}
-</style>
-
-<script src="assets/js/main.js"></script>
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        menuToggle.addEventListener('click', function() {
+          navLinks.classList.toggle('active');
+          menuToggle.classList.toggle('active');
+        });
+        
+        // Image fallback
+        const images = document.querySelectorAll('img');
+        images.forEach(img => {
+          img.onerror = function() {
+            this.src = '/api/placeholder/400/400';
+            this.alt = 'Imagem Placeholder';
+          };
+        });
+        
+        // FAQ functionality
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+          const question = item.querySelector('.faq-question');
+          
+          question.addEventListener('click', () => {
+            // Toggle active class on the clicked item
+            item.classList.toggle('active');
+            
+            // Update the icon
+            const icon = item.querySelector('.faq-icon');
+            if (item.classList.contains('active')) {
+              icon.textContent = '−';
+            } else {
+              icon.textContent = '+';
+            }
+          });
+        });
+      });
+    </script>
 </body>
 </html>

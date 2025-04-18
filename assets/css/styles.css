@@ -721,3 +721,1121 @@ footer#contato .copyright {
         transform: translateY(-9px) rotate(-45deg);
     }
 }
+
+/* ========== [COMBO SECTION STYLES] ========== */
+.combo-section {
+  background: linear-gradient(to right, rgba(20, 20, 20, 0.98), rgba(25, 25, 25, 0.95));
+  padding: 80px 0;
+  border-top: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
+}
+
+.combo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.combo-card {
+  background: rgba(30, 30, 30, 0.8);
+  padding: 30px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.combo-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--gold);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.combo-badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: var(--gold);
+  color: var(--dark);
+  padding: 5px 15px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.combo-card h3 {
+  color: var(--gold);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.combo-includes h4 {
+  color: var(--light);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.combo-includes ul {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.combo-includes li {
+  padding: 8px 0;
+  border-bottom: 1px dashed rgba(255,255,255,0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.bonus-item {
+  color: var(--gold);
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+.price-box {
+  background: rgba(0,0,0,0.3);
+  padding: 15px;
+  margin: 20px 0;
+  border: 1px dashed var(--gold);
+}
+
+.price-comparison {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.total-original {
+  color: var(--light-gray);
+}
+
+.economy {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.current-price {
+  font-size: 2.5rem;
+  color: var(--gold);
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn-combo {
+  width: 100%;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 16px;
+}
+
+.combo-guarantee {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: var(--light-gray);
+}
+
+.combo-premium {
+  position: relative;
+  overflow: hidden;
+}
+
+.combo-premium::after {
+  content: "🌟 TOP OFFER";
+  position: absolute;
+  top: 15px;
+  right: -25px;
+  background: var(--gold);
+  color: var(--dark);
+  padding: 5px 25px;
+  transform: rotate(45deg);
+  font-weight: bold;
+  font-size: 0.7rem;
+  z-index: 1;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .combo-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .combo-premium::after {
+    font-size: 0.7rem;
+    right: -35px;
+  }
+}
+footer#contato a, 
+footer#contato i.fa-phone {
+    color: white !important;
+}
+.combo-grid {
+  align-items: stretch; /* Add this */
+}
+.combo-card {
+  height: 100%; /* Add this */
+  display: flex;
+  flex-direction: column;
+}
+.combo-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+footer#contato a, 
+footer#contato i.fa-phone {
+    color: white !important;
+}
+/* Add to styles.css */
+.page-count {
+  color: var(--light-gray);
+  font-size: 0.85em;
+}
+
+.gold-icon {
+  color: var(--gold);
+  margin-right: 8px;
+}
+
+.combo-includes li {
+  display: flex;
+  align-items: baseline;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #ff6b6b; /* More visible red */
+  margin-left: auto;
+  padding-left: 10px;
+}
+
+.price-box {
+  margin-top: 30px !important;
+}
+
+#produtos {
+  padding-top: 0; /* Remove espaçamento extra no topo */
+  scroll-margin-top: 80px; /* Ajuste para o header fixo */
+}
+@media (max-width: 768px) {
+  .combo-cta {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+
+/* ESTILO RETANGULAR DOURADO */
+.gold-rectangular-cta {
+  display: inline-block;
+  background-color: #d4af37;
+  color: #1a3a2c !important;
+  padding: 14px 30px;
+  border-radius: 4px; /* Bordas retas */
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.5);
+  border: none;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.gold-rectangular-cta:hover {
+  background-color: #e6c126;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(212, 175, 55, 0.7);
+}
+
+.offer-icon {
+  margin-right: 10px;
+}
+
+.arrow-icon {
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+.warning-icon {
+  transition: transform 0.3s;
+}
+.gold-rectangular-cta:hover .warning-icon {
+  transform: scale(1.1);
+}
+.warning-icon {
+  color: #1a3a2c; /* Preto premium */
+  font-size: 1.3em;
+  text-shadow: 0 0 2px rgba(255,255,255,0.5); /* Contorno branco */
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.warning-icon {
+  transition: transform 0.3s;
+}
+.gold-rectangular-cta:hover .warning-icon {
+  transform: scale(1.1);
+}
+.page-count {
+  display: inline-block;
+  width: 85px;
+  text-align: center;
+  margin: 0 10px;
+  color: var(--light-gray);
+  font-size: 0.85em;
+}
+
+.combo-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.price-box {
+  margin-top: auto;
+}
+
+.gold-icon {
+  color: var(--gold) !important;
+  margin-right: 8px;
+}
+
+.bonus-text {
+  color: var(--gold);
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.bonus-text::after {
+  content: " ";
+}
+/* Força o ícone do WhatsApp branco visível */
+.whatsapp-float i {
+  color: white !important;
+}
+/* Correção para o WhatsApp Float Button */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-float i {
+    color: white !important;
+}
+
+/* Correção para o layout de combos em mobile */
+@media (max-width: 768px) {
+    .combo-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .combo-card {
+        padding: 20px;
+    }
+    
+    .combo-badge {
+        font-size: 0.8rem;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .gold-rectangular-cta {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Garantir que as imagens tenham fallback */
+img {
+    min-height: 100px;
+}
+
+/* Melhorar visibilidade dos itens do combo */
+.combo-includes li {
+    flex-wrap: wrap;
+}
+
+.page-count, .original-price {
+    margin-top: 5px;
+}
+
+/* Correção para o botão do WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #FFF !important;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-float i {
+  color: white !important;
+}
+
+/* Ajustes na seção de combo */
+.combo-includes {
+  margin-bottom: 20px;
+}
+
+.combo-includes h4 {
+  color: var(--gold);
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.page-count {
+  display: inline-block;
+  min-width: 80px;
+  text-align: center;
+  color: var(--light-gray);
+  font-size: 0.9em;
+}
+
+.price-box {
+  background: rgba(0,0,0,0.3);
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px dashed var(--gold);
+  width: 100%;
+  align-self: center;
+}
+
+/* Ajuste no CTA gold rectangular */
+.gold-rectangular-cta {
+  display: inline-block;
+  background-color: #d4af37;
+  color: #1a3a2c !important;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.5);
+  border: none;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Ajuste na garantia */
+.guarantee-section {
+  background-color: #0d0d0d;
+  padding: 40px 0;
+  text-align: center;
+  border-top: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
+}
+
+.guarantee-title {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 2.2rem !important;
+  font-weight: bold;
+  color: #d4af37 !important;
+  margin-bottom: 15px;
+}
+
+.guarantee-text p {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 1.1rem !important;
+  color: white !important;
+  line-height: 1.6;
+}
+
+/* FAQ Styling */
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+  padding-bottom: 15px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.faq-question h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--light);
+}
+
+.faq-icon {
+  color: var(--gold);
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 15px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  padding: 0 15px 15px;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+
+/* Correção para o número de telefone no rodapé */
+footer#contato .contact-info p {
+  color: #fff !important;
+}
+
+footer#contato .contact-info span {
+  color: #fff !important;
+  font-weight: bold;
+}
+
+/* Ajuste para seção de combos mobile */
+@media (max-width: 768px) {
+  .combo-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .combo-card {
+    padding: 20px;
+  }
+  
+  .gold-rectangular-cta {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+  
+  .page-count {
+    min-width: 60px;
+    font-size: 0.8em;
+  }
+}
+
+/* ===== [F3 - CTA PARA COMBOS] ===== */
+.combo-cta-wrapper {
+  margin: 10px auto 30px;
+  text-align: center;
+}
+
+.combo-cta-button {
+  background: linear-gradient(135deg, #d4af37, #e6c126);
+  color: #1a3a2c !important;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-weight: 800;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+}
+
+/* ===== [F4 - RIBBON FIXO] ===== */
+.combo-premium {
+  position: relative;
+  overflow: hidden;
+}
+
+.ribbon {
+  position: absolute;
+  top: 15px;
+  right: -30px;
+  background: #d4af37;
+  color: #1a3a2c;
+  padding: 5px 30px;
+  transform: rotate(45deg);
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+/* ===== [F7 - GARANTIA ALINHADA] ===== */
+.guarantee-section h3 {
+  font-size: 2rem;
+  color: #d4af37;
+  font-family: 'Playfair Display', serif;
+}
+
+.guarantee-text {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-top: 10px;
+}
+
+/* ===== [F3 - CTA PARA COMBOS] ===== */
+.combo-cta-wrapper {
+  margin: 10px auto 30px;
+  text-align: center;
+}
+
+.combo-cta-button {
+  background: linear-gradient(135deg, #d4af37, #e6c126);
+  color: #1a3a2c !important;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-weight: 800;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+}
+
+/* ===== [F4 - RIBBON FIXO] ===== */
+.combo-premium {
+  position: relative;
+  overflow: hidden;
+}
+
+.ribbon {
+  position: absolute;
+  top: 15px;
+  right: -30px;
+  background: #d4af37;
+  color: #1a3a2c;
+  padding: 5px 30px;
+  transform: rotate(45deg);
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+/* ===== [F7 - GARANTIA ALINHADA] ===== */
+.guarantee-section {
+  background: linear-gradient(135deg, #1a3a2c, #2c614a) !important;
+  padding: 60px 0 !important;
+}
+
+.guarantee-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+.guarantee-section h2 {
+  font-size: 2.2rem !important;
+  color: #d4af37 !important;
+  font-family: 'Playfair Display', serif !important;
+  margin-bottom: 20px !important;
+}
+
+.guarantee-section p {
+  font-size: 1.2rem !important;
+  color: white !important;
+  line-height: 1.6 !important;
+}/* [F3] ESTILO DO CTA */
+.combo-cta-wrapper {
+  text-align: center;
+  margin: 10px 0 30px;
+}
+.combo-cta-button {
+  background: #d4af37;
+  color: #1a3a2c !important;
+  padding: 12px 25px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* [F4] AJUSTE DO RIBBON */
+.combo-premium {
+  position: relative;
+  overflow: hidden;
+}
+.ribbon {
+  position: absolute;
+  top: 15px;
+  right: -30px;
+  background: #d4af37;
+  transform: rotate(45deg);
+}
+/* [F3] CTA */
+.combo-cta-wrapper {
+  margin: 10px auto 30px;
+}
+.combo-cta-button {
+  background: #d4af37;
+  color: #1a3a2c !important;
+}
+
+/* [F4] Ribbon */
+.combo-premium .ribbon {
+  transform: rotate(45deg);
+  right: -30px;
+}
+
+/* [F7] Garantia */
+.guarantee-section h3 {
+  font-size: 2rem;
+  color: #d4af37;
+}
+
+/* Fix for WhatsApp button */
+.whatsapp-float {
+    position: fixed !important;
+    width: 60px !important;
+    height: 60px !important;
+    bottom: 40px !important;
+    right: 40px !important;
+    background-color: #25d366 !important;
+    color: #FFF !important;
+    border-radius: 50px !important;
+    text-align: center !important;
+    font-size: 30px !important;
+    box-shadow: 2px 2px 3px #999 !important;
+    z-index: 1000 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-decoration: none !important;
+    animation: none !important;
+    transition: all 0.3s ease !important;
+  .whatsapp-float:hover {
+    background-color: #20ba5a !important;
+    transform: scale(1.05) !important;
+  }
+
+  .whatsapp-float i {
+    color: white !important;
+    font-size: 30px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 60px !important;
+  }
+</style>
+
+/* Fix for spacing between sections */
+section {
+  padding: 60px 0;
+  margin: 0;
+}
+
+/* Consistent spacing between folds */
+section + section {
+  margin-top: 0;
+  padding-top: 60px;
+}
+
+/* Fix for "oferta limitada" text */
+.combo-guarantee p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Fix for testimonials section spacing */
+#depoimentos {
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
+}
+
+/* Fix for guarantee heading */
+.guarantee-section .section-title {
+  color: var(--dark);
+  font-size: 2rem;
+  font-family: inherit;
+  margin-bottom: 20px;
+}
+/* Fix for combo callout text size */
+.combo-callout {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin: 25px auto;
+}
+
+.combo-callout small {
+  font-size: 1rem;
+}
+
+/* Fix for gold rectangular CTA */
+.gold-rectangular-cta {
+  font-size: 1.3rem;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  background: linear-gradient(to right, #d4af37, #f9d423);
+  color: #000;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gold-rectangular-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Fix for FAQ styling */
+.faq-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 15px;
+}
+
+.faq-item:after {
+  display: none; /* Remove gold lines below questions */
+}
+
+.faq-question {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  display: none;
+  padding: 15px 0;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+/* Fix for contact section underline */
+footer h3 {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+<style>
+  /* Add scroll-margin-top to adjust where the scroll position lands */
+  #combo-products {
+    scroll-margin-top: 80px;
+  }
+  
+  /* Optional: add smooth scrolling for a better UX */
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+  /* Add scroll-margin-top to adjust where the scroll position lands */
+  #combo-premium {
+    scroll-margin-top: 80px;
+  }
+  
+  /* Optional: add smooth scrolling for a better UX */
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+/* Stops blinking ONLY in contact section */
+#contato .whatsapp-float {
+  animation: none !important;
+}
+.faq-item.active .faq-answer {
+  display: block !important;
+  padding: 15px 0 !important;
+}
+
+/* Add to styles.css */
+.faq-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+  padding-bottom: 15px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.faq-question h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--light);
+}
+
+.faq-icon {
+  color: var(--gold);
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 15px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  padding: 15px;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+
+/* Add to styles.css */
+.guarantee-section {
+  background: linear-gradient(135deg, #1a3a2c, #2c614a);
+  padding: 60px 0;
+  text-align: center;
+  border-top: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
+}
+
+.guarantee-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.guarantee-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.garantia {
+  background-color: #121212;
+  color: #fff;
+}
+#whatsapp-button {
+  z-index: 9999;
+  transition: none !important;
+  animation: none !important;
+}
+#whatsapp-button:hover {
+  animation: none !important;
+}
+@keyframes piscar { /* remova isso se existir */ }
+.garantia-section {
+  background-color: #121212; /* ou #000, pra combinar com o resto */
+  padding: 60px 20px;
+  margin-top: 80px;
+  border-radius: 16px;
+  color: white;
+}
+
+#whatsapp-button, #whatsapp-button:hover, #whatsapp-button:focus {
+  animation: none !important;
+  transition: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+#whatsapp-button {
+  animation: none !important;
+  transform: none !important;
+  opacity: 1 !important;
+}
+.garantia-section {
+  background-color: #0f0f0f;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+}
+
+.garantia-section h2 {
+  color: #d4af37;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  position: relative;
+}
+
+.garantia-section h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #d4af37;
+  display: block;
+  margin: 12px auto 0;
+}
+
+.garantia-box {
+  background-color: #121212;
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+/* Main container fixes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header alignment */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.site-logo {
+  margin-right: auto;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Product grid layout */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.product-title {
+  color: #e9b84f;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.product-description {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Make text elements centered */
+h1, h2, h3, h4, p {
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  .site-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Force center alignment for main container */
+.elementor-section.elementor-section-boxed > .elementor-container {
+  max-width: 1140px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Product grid container */
+.products-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Product grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Main heading centering */
+.main-heading {
+  text-align: center;
+  width: 100%;
+}
+
+/* Override any left/right margins */
+body .elementor-element {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Minimal centering fix */
+.elementor-section .elementor-container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Fix for product grid */
+.elementor-row,
+.elementor-widget-wrap {
+  justify-content: center !important;
+}
+
+/* Ensure content doesn't exceed bounds */
+.elementor-section.elementor-section-boxed > .elementor-container {
+  max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
